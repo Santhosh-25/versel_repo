@@ -7,6 +7,8 @@ function App() {
       <header className="App-header">
         <h1>Hello World!! From the deployed react application !!</h1>
         <h1>Updating the Front page</h1>
+        <h1>Updating the Front page with this text 2.0.0</h1>
+
       </header>
     </div>
   );
