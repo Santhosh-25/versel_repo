@@ -18,7 +18,8 @@ jobs:
     runner: Machine
     image: image
     steps:
-      - npm install axios
+      - npm install -g vercel
+        - vercel --version
 stages:
   - name: build
     jobs:
