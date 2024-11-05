@@ -8,19 +8,14 @@ images:
     auth:
       username: santhosh270
       password: Catalyst@test123
-#   ubuntu:
-#     image: ubuntu:latest
-#     auth:
-#       username: vipinkumarh
-#       password: Catalyst@1
 jobs:
   Deploy_Client_Functions:
     runner: Machine
     image: image
     steps:
       - npm install -g vercel
-        - vercel --version
+      - vercel --version
 stages:
-  - name: build
+  - name: test
     jobs:
       - Deploy_Client_Functions
