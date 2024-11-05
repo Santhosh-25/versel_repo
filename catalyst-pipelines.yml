@@ -1,17 +1,20 @@
-version: 1.0
+version: 1
+runners:
+  Machine:
+    config-id: 2
+images:
+  image:
+    image: Ubuntu
+    auth:
+      username: santhosh270
+      password: Catalyst@test123
 jobs:
-  hello:
+  Deploy_Client_Functions:
+    runner: Machine
+    image: image
     steps:
-      - echo "Hello"
-  world:
-    steps:
-      - echo "World"
-  hello-world:
-    steps:
-      - echo "Hello World!"
+      - npm install axios
 stages:
   - name: build
     jobs:
-      - - hello
-        - world
-      - hello-world
+      - Deploy_Client_Functions
