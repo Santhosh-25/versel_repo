@@ -15,7 +15,10 @@ jobs:
     steps:
       - npm install -g vercel
       - vercel --version
+      - vercel --token=DWkAIYRcGfsaZqkJmK2LtD3u  
 stages:
   - name: test
     jobs:
       - Deploy_Client_Functions
+variables:
+  VercelToken: DWkAIYRcGfsaZqkJmK2LtD3u
