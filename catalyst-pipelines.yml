@@ -3,20 +3,20 @@ runners:
   Machine:
     config-id: 2
 images:
-#   image:
-#     image: ubuntu:latest
-#     auth:
-#       username: santhosh270
-#       password: Catalyst@test123
-  ubuntu:
+  image:
     image: ubuntu:latest
     auth:
-      username: vipinkumarh
-      password: Catalyst@1
+      username: santhosh270
+      password: Catalyst@test123
+#   ubuntu:
+#     image: ubuntu:latest
+#     auth:
+#       username: vipinkumarh
+#       password: Catalyst@1
 jobs:
   Deploy_Client_Functions:
     runner: Machine
-    image: ubuntu
+    image: image
     steps:
       - npm install axios
 stages:
