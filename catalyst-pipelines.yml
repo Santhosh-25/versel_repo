@@ -15,7 +15,8 @@ jobs:
     steps:
       - npm install -g vercel
       - vercel --version
-      - vercel --prod --token=DWkAIYRcGfsaZqkJmK2LtD3u --yes
+      - vercel link
+      - vercel --token=DWkAIYRcGfsaZqkJmK2LtD3u
 stages:
   - name: test
     jobs:
